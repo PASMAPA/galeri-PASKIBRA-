@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeri Paskibra MAN Palopo</title>
+    <title>Galeri Paskibra</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,59 +19,31 @@
 
     <section id="home">
         <h2>Selamat Datang di Website Paskibra</h2>
-        <p>Ini adalah tempat untuk menyimpan kenangan indah Paskibra MAN Palopo.</p>
+        <p>Selamat datang di tempat kenangan indah Paskibra MAN Palopo!</p>
     </section>
 
     <section id="galeri">
         <h2>Galeri Foto</h2>
-        <div class="gallery" id="gallery">
-            <!-- Gambar akan ditampilkan di sini -->
+        <div class="gallery">
+            <!-- Tambahkan gambar-gambar di sini -->
+            <img src="foto1.jpg" alt="Kegiatan 1">
+            <img src="foto2.jpg" alt="Kegiatan 2">
+            <img src="foto3.jpg" alt="Kegiatan 3">
         </div>
-        <input type="file" id="file-input" accept="image/*" onchange="uploadImage()">
-        <button onclick="uploadImage()">Unggah Foto</button>
     </section>
 
     <section id="about">
         <h2>Tentang Kami</h2>
-        <p>Paskibra MAN Palopo adalah organisasi yang berdedikasi untuk mengembangkan jiwa kepemimpinan dan disiplin di kalangan pelajar.</p>
+        <p>Paskibra MAN Palopo adalah organisasi...</p>
     </section>
 
     <section id="contact">
         <h2>Kontak Kami</h2>
-        <p>Email: <a href="paskibramanpalopo401@gmail.com">paskibramanpalopo401@gmail.com</a></p>
-        <p>Ikuti kami di:</p>
-        <p>
-            <a href="https://instagram.com/paskibra_manpalopo" target="_blank">Instagram</a> | 
-            <a href="https://tiktok.com/@paskibraman401" target="_blank">TikTok</a>
-        </p>
+        <p>Email: paskibra.manpalopo@gmail.com</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Paskibra MAN Palopo. by wiri slebew.</p>
+        <p>&copy; 2024 Paskibra MAN Palopo</p>
     </footer>
-
-    <script>
-        function uploadImage() {
-            const fileInput = document.getElementById('file-input');
-            const gallery = document.getElementById('gallery');
-
-            const file = fileInput.files[0];
-            const reader = new FileReader();
-
-            reader.onload = function(event) {
-                const img = document.createElement('img');
-                img.src = event.target.result;
-                img.style.width = 'auto';  // Mengatur lebar otomatis
-                img.style.height = 'auto'; // Mengatur tinggi otomatis
-                img.style.maxWidth = '100%'; // Mengatur max width
-                img.style.maxHeight = '300px'; // Mengatur max height
-                gallery.appendChild(img);
-            }
-
-            if (file) {
-                reader.readAsDataURL(file);
-            }
-        }
-    </script>
 </body>
 </html>
