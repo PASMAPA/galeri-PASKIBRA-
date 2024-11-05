@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Warna latar belakang yang lebih cerah */
+}
+
+header {
+    background-color: #4CAF50; /* Warna hijau yang menarik */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline; /* Efek hover pada link */
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background: white; /* Background putih untuk section */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+h2 {
+    color: #4CAF50; /* Warna hijau untuk judul section */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Menyusun gambar di tengah */
+}
+
+.gallery img {
+    width: auto; /* Membiarkan lebar otomatis */
+    height: auto; /* Membiarkan tinggi otomatis */
+    max-width: 100%; /* Mengatur max width */
+    max-height: 300px; /* Mengatur max height */
+    border-radius: 8px; /* Sudut membulat pada gambar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Bayangan halus pada gambar */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Agar footer tetap di bawah */
+    bottom: 0;
+    width: 100%; /* Memastikan footer lebar */
+}
+
+a {
+    color: #4CAF50; /* Warna hijau untuk link */
+}
+
+a:hover {
+    text-decoration: underline; /* Efek hover pada link */
+}
